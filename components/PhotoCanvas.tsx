@@ -63,7 +63,7 @@ export function PhotoCanvas({
         // Wait for Google font to be ready
         try {
           await document.fonts.load('400 52px "Pacifico"');
-        } catch (_) { /* fallback to system font */ }
+        } catch { /* fallback to system font */ }
 
         const textColor = getContrastColor(bgColor);
         ctx.textAlign    = "center";
